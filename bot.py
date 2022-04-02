@@ -1,6 +1,6 @@
 import asyncio
 from os import environ
-from pyrogram import Client, filters, idle
+from pyrogram import Client, filters, idle, InlineKeyboardMarkup, InlineKeyboardButton
 
 API_ID = int(environ.get("API_ID"))
 API_HASH = environ.get("API_HASH")
