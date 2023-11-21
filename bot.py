@@ -21,14 +21,14 @@ START_MSG = "<b>Hᴇʟʟᴏ {}\n\nI ᴏɴʟʏ sᴜᴘᴘᴏʀᴛ ᴛʜᴇ</b> <a
      ]]
      )
 
-User = Client(session_name=SESSION,
+User = Client(session_string=SESSION,
               api_id=API_ID,
               api_hash=API_HASH,
               workers=300
               )
 
 
-Bot = Client(session_name="auto-delete",
+Bot = Client(session_string="auto-delete",
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
