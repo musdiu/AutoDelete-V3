@@ -7,7 +7,7 @@ API_HASH = environ.get("API_HASH")
 BOT_TOKEN = environ.get("BOT_TOKEN")
 SESSION = environ.get("SESSION")
 TIME = int(environ.get("TIME"))
-ADMIN = int(environ.get("ADMIN"))
+
 GROUPS = []
 for grp in environ.get("GROUPS").split():
     GROUPS.append(int(grp))
