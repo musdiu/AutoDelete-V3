@@ -8,7 +8,7 @@ API_HASH = environ.get("API_HASH")
 BOT_TOKEN = environ.get("BOT_TOKEN")
 # SESSION = environ.get("SESSION")
 TIME = int(environ.get("TIME"))
-ADMIN = int(environ.get("ADMIN"))
+#ADMIN = int(environ.get("ADMIN"))
 GROUPS = []
 for grp in environ.get("GROUPS").split():
     GROUPS.append(int(grp))
@@ -33,18 +33,18 @@ app = Client(session_name="auto-delete",
              workers=300
              )
 
-@app.on_message(filters.command('pin') & filters.private)
-async def pin(bot, message):
-    if message.from_user.id == ADMIN: 
-               if message.reply_to_message:
-                                    chatid=int(message.text.replace("/pin"," "))
-                                    p=await bot.copy_message(chat_id=chatid, from_chat_id=ADMIN, message_id=message.reply_to_message.message_id)
-                                    await p.pin()
+#@app.on_message(filters.command('pin') & filters.private)
+#async def pin(bot, message):
+   # if message.from_user.id == ADMIN: 
+               #if message.reply_to_message:
+                                   # chatid=int(message.text.replace("/pin"," "))
+                                    #p=await bot.copy_message(chat_id=chatid, from_chat_id=ADMIN, message_id=message.reply_to_message.message_id)
+                                   ₹ await p.pin()
                                     await message.reply_text("<b>✅ Message Successfully Send to the Group And pinned</b>")
-               else:
-                    await message.reply_text("<b>Use this command as the reply of any Message to Send in Group</b>")                         
-    else:
-         await message.reply_text("<b>That's not for you bruh 😅</b>")
+              # else:
+                    #await message.reply_text("<b>Use this command as the reply of any Message to Send in Group</b>")                         
+    #else:
+         #await message.reply_text("<b>That's not for you bruh 😅</b>")
             
 @app.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
