@@ -18,7 +18,7 @@ for usr in environ.get("ADMINS").split():
 START_MSG = "<b>Hᴇʟʟᴏ {}\n\nI ᴏɴʟʏ sᴜᴘᴘᴏʀᴛ ᴛʜᴇ</b> <a href='http://t.me/Cinimalokham'><b>Cɪɴɪᴍᴀʟᴏᴋʜᴀᴍ</b></a> <b>ɢʀᴏᴜᴘ\n\nI ᴅᴏ ɢʀᴏᴜᴘ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴄʟᴇᴀɴɪɴɢ ᴇᴠᴇʀʏ 30 ᴍɪɴᴜᴛᴇs</b>"
  
 
-User = Client(session_string=SESSION,
+User = Client(name=SESSION,
               api_id=API_ID,
               api_hash=API_HASH,
               workers=300
