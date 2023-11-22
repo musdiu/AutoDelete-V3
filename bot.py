@@ -16,10 +16,7 @@ for usr in environ.get("ADMINS").split():
     ADMINS.append(int(usr))
 
 START_MSG = "<b>Hᴇʟʟᴏ {}\n\nI ᴏɴʟʏ sᴜᴘᴘᴏʀᴛ ᴛʜᴇ</b> <a href='http://t.me/Cinimalokham'><b>Cɪɴɪᴍᴀʟᴏᴋʜᴀᴍ</b></a> <b>ɢʀᴏᴜᴘ\n\nI ᴅᴏ ɢʀᴏᴜᴘ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴄʟᴇᴀɴɪɴɢ ᴇᴠᴇʀʏ 30 ᴍɪɴᴜᴛᴇs</b>"
- reply_markup=InlineKeyboardMarkup( [[
-     InlineKeyboardButton("button name" url="http://t.me/@Cinimalokham"
-     ]]
-     )
+ 
 
 User = Client(session_string=SESSION,
               api_id=API_ID,
