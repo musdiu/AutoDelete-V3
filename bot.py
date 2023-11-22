@@ -26,7 +26,7 @@ reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("button name", url="htt
 #               )
 
 
-app = Client(session_name="auto-delete",
+app = Client(name="auto-delete",
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
