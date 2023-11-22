@@ -39,8 +39,8 @@ app = Client(session_name="auto-delete",
                #if message.reply_to_message:
                                    # chatid=int(message.text.replace("/pin"," "))
                                     #p=await bot.copy_message(chat_id=chatid, from_chat_id=ADMIN, message_id=message.reply_to_message.message_id)
-                                   ₹ await p.pin()
-                                    await message.reply_text("<b>✅ Message Successfully Send to the Group And pinned</b>")
+                                   #₹ await p.pin()
+                                    #await message.reply_text("<b>✅ Message Successfully Send to the Group And pinned</b>")
               # else:
                     #await message.reply_text("<b>Use this command as the reply of any Message to Send in Group</b>")                         
     #else:
