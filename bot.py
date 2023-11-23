@@ -1,4 +1,4 @@
-import asyncio
+idport asyncio
 from os import environ
 from pyrogram import *
 from pyrogram.types import *
@@ -58,7 +58,7 @@ async def delete(user, message):
           return
        else:
           await asyncio.sleep(TIME)
-          await app.delete_messages(message.chat.id,message.message.id)
+          await app.delete_messages(message.chat.id,Message.id)
     except Exception as e:
        print(e)
        
