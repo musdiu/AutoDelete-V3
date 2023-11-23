@@ -48,7 +48,7 @@ app = Client(session_name="auto-delete",
          #await message.reply_text("<b>That's not for you bruh 😅</b>")
             
 @app.on_message(filters.command('start') & filters.private)
-async def start(, m: Message):
+async def start(__, m: Message):
     await m.reply(START_MSG.format(m.from_user.mention))
 
 @app.on_message(filters.chat(GROUPS))
