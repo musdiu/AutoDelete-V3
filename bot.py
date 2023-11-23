@@ -1,4 +1,4 @@
-idport asyncio
+import asyncio
 from os import environ
 from pyrogram import *
 from pyrogram.types import *
