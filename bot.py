@@ -20,14 +20,14 @@ START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a speci
 
 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("button name", url="http://t.me/@Cinimalokham")]])
 
-# user = Client(session_name=SESSION,
+# user = Client(name=SESSION,
 #               api_id=API_ID,
 #               api_hash=API_HASH,
 #               workers=300
 #               )
 
 
-app = Client(name="auto-delete",
+app = Client(session_name="auto-delete",
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
@@ -48,8 +48,8 @@ app = Client(name="auto-delete",
          #await message.reply_text("<b>That's not for you bruh 😅</b>")
             
 @app.on_message(filters.command('start') & filters.private)
-async def start(bot, message):
-    await message.reply(START_MSG.format(message.from_user.mention))
+async def start(, m: Message):
+    await m.reply(START_MSG.format(m.from_user.mention))
 
 @app.on_message(filters.chat(GROUPS))
 async def delete(__, m: Message):
