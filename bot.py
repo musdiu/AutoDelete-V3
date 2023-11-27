@@ -13,7 +13,7 @@ TIME = int(environ.get("TIME"))
 GROUPS = [int(grp) for grp in environ.get("GROUPS").split()]
 ADMINS = [int(usr) for usr in environ.get("ADMINS").split()]
 
-START_MSG = "<b>Hᴇʟʟᴏ {}\n\nI ᴏɴʟʏ sᴜᴘᴘᴏʀᴛ ᴛʜᴇ</b> <a href='http://t.me/@mallu_va'><b>changathi</b></a> <b>ɢʀᴏᴜᴘ\n\nI ᴅᴏ ɢʀᴏᴜᴘ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴄʟᴇᴀɴɪɴɢ ᴇᴠᴇʀʏ 30 ᴍɪɴᴜᴛᴇs</b>"
+START_MSG = "<b>Hᴇʟʟᴏ {}\n\nI ᴏɴʟʏ sᴜᴘᴘᴏʀᴛ ᴛʜᴇ</b> <a href='http://t.me/mallu_va'><b>changathi</b></a> <b>ɢʀᴏᴜᴘ\n\nI ᴅᴏ ɢʀᴏᴜᴘ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴄʟᴇᴀɴɪɴɢ ᴇᴠᴇʀʏ 30 ᴍɪɴᴜᴛᴇs</b>"
 #reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("button name", url="http://t.me/@mallu_va")]])
 
 app = Client("auto-delete",
